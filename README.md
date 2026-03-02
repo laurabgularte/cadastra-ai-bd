@@ -1,4 +1,4 @@
- ## 🎲  Projeto para a disciplina de Banco de Dados I
+ ## 🎲  Projeto - Banco de Dados I - Restaurante Vitória
 
  
 
