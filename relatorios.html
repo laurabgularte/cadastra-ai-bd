@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Cadastra Aí</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Relatórios de Almoço</h1>
+            <div class="user-info">
+                <a href="dashboard.html" class="logout-btn">Voltar ao Painel</a>
+            </div>
+        </header>
+
+        <div class="filter-container">
+            <div class="filter-group">
+                <label>Selecionar Mês:</label>
+                <select class="custom-select">
+                    <option value="03">Março / 2026</option>
+                    <option value="02">Fevereiro / 2026</option>
+                    <option value="01">Janeiro / 2026</option>
+                </select>
+            </div>
+            <button class="btn-filter">🔍 Filtrar Dados</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total do Mês</h3>
+                <p class="stat-number">248</p>
+            </div>
+            <div class="stat-card">
+                <h3>Média Diária</h3>
+                <p class="stat-number">12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Mais Frequente</h3>
+                <p class="stat-number" style="font-size: 18px;">João Silva</p>
+            </div>
+        </div>
+
+        <div class="actions-grid" style="grid-template-columns: 1fr;">
+            <div class="action-card report-row">
+                <div class="report-info">
+                    <span class="icon">📊</span>
+                    <div>
+                        <h3>João Silva</h3>
+                        <p>Total de 22 almoços este mês</p>
+                    </div>
+                </div>
+                <span class="report-link">Ver Detalhes</span>
+            </div>
+
+            <div class="action-card report-row">
+                <div class="report-info">
+                    <span class="icon">📊</span>
+                    <div>
+                        <h3>Maria Oliveira</h3>
+                        <p>Total de 20 almoços este mês</p>
+                    </div>
+                </div>
+                <span class="report-link">Ver Detalhes</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
