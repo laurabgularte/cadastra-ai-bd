@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Almoço - Cadastra Aí</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Controle de Almoço </h1>
+            <div class="user-info">
+                <a href="dashboard.html" class="logout-btn" style="background: #e0e7ff; color: #4338ca;"> Voltar ao Painel</a>
+            </div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Cadastrados</h3>
+                <p class="stat-number">12</p>
+            </div>
+            <div class="stat-card" style="border-top-color: #10b981;">
+                <h3>Almoçaram Hoje</h3>
+                <p class="stat-number">8</p>
+            </div>
+            <div class="stat-card" style="border-top-color: #f59e0b;">
+                <h3>Restantes</h3>
+                <p class="stat-number">4</p>
+            </div>
+        </div>
+
+        <div class="actions-grid">
+            <div class="action-card">
+                <span class="icon">👤</span>
+                <h3>João Silva</h3>
+                <p>Cargo: Garçom</p>
+                <button class="btn-checkin" onclick="confirmarAlmoco(this)">Confirmar Almoço</button>
+            </div>
+
+            <div class="action-card">
+                <span class="icon">👤</span>
+                <h3>Maria Oliveira</h3>
+                <p>Cargo: Cozinheira</p>
+                <button class="btn-checkin" onclick="confirmarAlmoco(this)">Confirmar Almoço</button>
+            </div>
+
+            <div class="action-card">
+                <span class="icon">👤</span>
+                <h3>Ricardo Santos</h3>
+                <p>Cargo: Caixa</p>
+                <button class="btn-checkin" onclick="confirmarAlmoco(this)">Confirmar Almoço</button>
+            </div>
+
+            <div class="action-card">
+                <span class="icon">👤</span>
+                <h3>Ana Costa</h3>
+                <p>Cargo: Gerente</p>
+                <button class="btn-checkin" onclick="confirmarAlmoco(this)">Confirmar Almoço</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmarAlmoco(btn) {
+            btn.innerHTML = "✅ Confirmado";
+            btn.style.background = "#10b981";
+            btn.disabled = true;
+        }
+    </script>
+</body>
+</html>
